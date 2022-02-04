@@ -35,6 +35,12 @@ main {
   display: flex;
 }
 
+li {
+  list-style-type: none;
+}
+
+/* General - Main Nav */
+
 main h3 {
   color: white;
 }
@@ -66,23 +72,21 @@ main nav hr {
   margin: 0.8rem 0 1rem 0;
 }
 
+/* General - Footer */
+
 footer {
   height: 10vh;
   background-color: #282828;
 }
 
-li {
-  list-style-type: none;
-}
+/* Classes - Main Nav */
 
-/* Classes */
-
-main .container {
+main nav .container {
   margin-bottom: 2rem;
   padding: 0 1rem;
 }
 
-main .logo {
+main nav .logo {
   height: 50px;
 }
 
@@ -125,6 +129,8 @@ main nav div.bottom-nav span.profile-text {
   background-color: var(--grey);
   border: none;
 }
+
+/* ID - Main Nav */
 
 main nav img#download-icon {
   width: 15px;
