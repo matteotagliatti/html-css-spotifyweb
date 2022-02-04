@@ -29,9 +29,13 @@ main {
 }
 
 main nav {
-  width: 300px;
+  min-width: 250px;
   padding: 1rem 0;
   background-color: black;
+}
+
+main nav div:nth-child(2) {
+  padding: 0;
 }
 
 main nav ul li {
@@ -58,7 +62,7 @@ li {
 /* Classes */
 
 main .container {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   padding: 0 1rem;
 }
 
