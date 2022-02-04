@@ -98,6 +98,10 @@ footer {
   background-color: #282828;
 }
 
+footer i {
+  margin-right: 1rem;
+}
+
 /* Classes */
 
 .container {
@@ -225,6 +229,20 @@ main nav div.bottom-nav span.profile-text {
 
 /* Classes - Footer */
 
+footer .progress-bar {
+  height: 5px;
+  width: 80%;
+  border-radius: 3px;
+  background-color: var(--grey);
+}
+
+footer .progress-bar .inner {
+  height: 5px;
+  width: 20%;
+  border-radius: 3px;
+  background-color: lightgray;
+}
+
 /* Classes - Footer Left */
 
 .footer-left {
@@ -274,7 +292,6 @@ main nav div.bottom-nav span.profile-text {
 }
 
 .footer-middle i {
-  margin-right: 1rem;
   font-size: 1.5rem;
 }
 
@@ -290,18 +307,19 @@ main nav div.bottom-nav span.profile-text {
   gap: 1rem;
 }
 
-.footer-middle .progress-bar {
-  height: 5px;
-  width: 80%;
-  border-radius: 3px;
-  background-color: var(--grey);
+/* Classes - Footer Right */
+
+.footer-right {
+  display: flex;
+  align-items: center;
 }
 
-.footer-middle .progress-bar .inner {
-  height: 5px;
-  width: 20%;
-  border-radius: 3px;
-  background-color: lightgray;
+.footer-right .progress-bar-container {
+  width: 130px;
+}
+
+.footer-right .progress-bar {
+  width: 100%;
 }
 
 /* ID */
