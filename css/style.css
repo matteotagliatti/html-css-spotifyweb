@@ -1,0 +1,37 @@
+/* Import  */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+/* Reset */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global */
+
+main {
+  height: 90vh;
+  display: flex;
+}
+
+main nav {
+  width: 300px;
+  background-color: black;
+}
+
+footer {
+  height: 10vh;
+  background-color: #282828;
+}
+
+/* Classes */
+
+/* ID */
+
+#content {
+  width: 100%;
+  background-color: #141922;
+}
