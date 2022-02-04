@@ -6,6 +6,7 @@
 
 :root {
   --green: #c0ff31;
+  --grey: #a3a3a3;
 }
 
 /* Reset */
@@ -23,14 +24,25 @@ body {
   color: white;
 }
 
+h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
 main {
   height: 90vh;
   display: flex;
 }
 
+main h3 {
+  color: white;
+}
+
 main nav {
   min-width: 250px;
   padding: 1rem 0;
+  color: var(--grey);
   background-color: black;
 }
 
@@ -80,4 +92,14 @@ main nav ul .active {
 #content {
   width: 100%;
   background-color: #141922;
+}
+
+#create-playlist {
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+  color: black;
+  background-color: var(--grey);
+  border: none;
 }
