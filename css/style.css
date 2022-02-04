@@ -28,10 +28,6 @@ body {
   color: white;
 }
 
-h1 {
-  margin-bottom: 2rem;
-}
-
 h3 {
   font-weight: 700;
   text-transform: uppercase;
@@ -46,10 +42,6 @@ a {
 main {
   height: 90vh;
   display: flex;
-}
-
-img {
-  height: 200px;
 }
 
 li {
@@ -89,6 +81,19 @@ main nav hr {
   margin: 0.8rem 0 1rem 0;
 }
 
+/* General - Content */
+
+#content div {
+  margin-bottom: 2rem;
+}
+.section-title h1 {
+  margin-bottom: 0.5rem;
+}
+
+.section-title span {
+  color: var(--grey);
+}
+
 /* Global - Content Nav */
 
 .content-nav ul {
@@ -110,30 +115,6 @@ footer {
 
 .container {
   padding: 0 2rem;
-}
-
-.elements-container {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.element {
-  width: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  word-wrap: break-word;
-  text-align: center;
-}
-
-.element img {
-  margin-bottom: 1rem;
-}
-
-.element .title {
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
-  font-weight: 700;
 }
 
 /* Classes - Main Nav */
@@ -170,11 +151,49 @@ main nav div.bottom-nav span.profile-text {
   color: white;
 }
 
+/* Classes - Content */
+
+.section-title {
+  margin-bottom: 2rem;
+}
+
+.elements-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+
+.element {
+  width: calc(100% / 7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.element img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.element .title {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.element .author {
+  color: var(--grey);
+}
+
+.pop-artists img {
+  border-radius: 50%;
+}
+
 /* Classes - Content Upgrade */
 
 .upgrade-container {
   height: 10vh;
-  margin-bottom: 2rem;
   padding-right: 1rem;
   display: flex;
   justify-content: flex-end;
@@ -206,6 +225,7 @@ main nav div.bottom-nav span.profile-text {
 #content {
   width: 100%;
   background-color: #141922;
+  overflow-y: auto;
 }
 
 #create-playlist {
