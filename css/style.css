@@ -2,6 +2,12 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 
+/* Variables */
+
+:root {
+  --green: #c0ff31;
+}
+
 /* Reset */
 
 * {
@@ -12,6 +18,11 @@
 
 /* Global */
 
+body {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
 main {
   height: 90vh;
   display: flex;
@@ -19,7 +30,20 @@ main {
 
 main nav {
   width: 300px;
+  padding: 1rem 0;
   background-color: black;
+}
+
+main nav ul li {
+  margin-bottom: 0.5rem;
+  padding: 0.3rem 0;
+  display: flex;
+  align-items: center;
+}
+
+main nav ul li img {
+  height: 23px;
+  margin: 0 0.4rem 0 1rem;
 }
 
 footer {
@@ -27,7 +51,25 @@ footer {
   background-color: #282828;
 }
 
+li {
+  list-style-type: none;
+}
+
 /* Classes */
+
+main .container {
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+}
+
+main .logo {
+  height: 50px;
+}
+
+main nav ul .active {
+  border-left: 2px solid var(--green);
+  font-weight: 700;
+}
 
 /* ID */
 
