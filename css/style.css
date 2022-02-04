@@ -108,7 +108,17 @@ main nav hr {
 
 footer {
   height: 80px;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #282828;
+}
+
+/* General - Footer Left */
+
+.footer-left div:nth-child(3) {
+  margin-left: 2rem;
 }
 
 /* Classes */
@@ -218,6 +228,39 @@ main nav div.bottom-nav span.profile-text {
   padding-top: 4px;
   border-bottom: 2px solid var(--green);
   width: 30px;
+}
+
+/* Classes - Footer */
+
+/* Classes - Footer Left */
+
+.footer-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-left .play {
+  height: 40px;
+}
+
+.footer-left .title-author {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-left .title-author .title {
+  font-weight: 700;
+}
+
+.footer-left .title-author .author {
+  font-size: 0.8rem;
+  color: var(grey);
+}
+
+.footer-left i {
+  margin-right: 1rem;
 }
 
 /* ID */
