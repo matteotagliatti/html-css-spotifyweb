@@ -41,13 +41,13 @@ main h3 {
 
 main nav {
   min-width: 250px;
-  padding: 1rem 0;
+  padding-top: 1rem;
   color: var(--grey);
   background-color: black;
-}
 
-main nav div:nth-child(2) {
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 main nav ul li {
@@ -60,6 +60,10 @@ main nav ul li {
 main nav ul li img {
   height: 23px;
   margin: 0 0.4rem 0 1rem;
+}
+
+main nav hr {
+  margin: 0.8rem 0 1rem 0;
 }
 
 footer {
@@ -82,9 +86,27 @@ main .logo {
   height: 50px;
 }
 
+main nav .no-padding {
+  padding: 0;
+}
+
 main nav ul .active {
   border-left: 2px solid var(--green);
   font-weight: 700;
+}
+
+main nav div.bottom-nav img {
+  margin: 0 0.4rem 0 0rem;
+}
+
+main nav div.bottom-nav span {
+  display: flex;
+  align-items: center;
+}
+
+main nav div.bottom-nav span.profile-text {
+  font-weight: 700;
+  color: white;
 }
 
 /* ID */
@@ -102,4 +124,17 @@ main nav ul .active {
   color: black;
   background-color: var(--grey);
   border: none;
+}
+
+main nav img#download-icon {
+  width: 15px;
+  height: 15px;
+}
+
+main nav img#profile-icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 0.5rem;
+  background-color: var(--grey);
+  border-radius: 50%;
 }

@@ -18,37 +18,60 @@
     <main>
       <!-- Nav -->
       <nav>
-        <!-- Logo -->
-        <div class="container">
-          <img class="logo" src="img/logo.svg" alt="logo" />
+        <!-- Top Nav -->
+        <div>
+          <!-- Logo -->
+          <div class="container">
+            <img class="logo" src="img/logo.svg" alt="logo" />
+          </div>
+
+          <!-- Home + Search + Library -->
+          <div class="container no-padding">
+            <ul>
+              <li class="active">
+                <img src="img/home.svg" alt="home icon" /> Home
+              </li>
+              <li><img src="img/search.svg" alt="search icon" /> Cerca</li>
+              <li>
+                <img src="img/libreria.svg" alt="library icon" /> La tua
+                libreria
+              </li>
+            </ul>
+          </div>
+
+          <!-- Playlist -->
+          <div class="container">
+            <h3>Playlist</h3>
+            <ul>
+              <li><button id="create-playlist">+</button> Crea Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+            </ul>
+          </div>
         </div>
 
-        <!-- Home + Search + Library -->
-        <div class="container">
-          <ul>
-            <li class="active">
-              <img src="img/home.svg" alt="home icon" /> Home
-            </li>
-            <li><img src="img/search.svg" alt="search icon" /> Cerca</li>
-            <li>
-              <img src="img/libreria.svg" alt="library icon" /> La tua libreria
-            </li>
-          </ul>
-        </div>
-
-        <!-- Playlist -->
-        <div class="container">
-          <h3>Playlist</h3>
-          <ul>
-            <li><button id="create-playlist">+</button> Crea Playlist</li>
-            <li>Nome Playlist</li>
-            <li>Nome Playlist</li>
-            <li>Nome Playlist</li>
-            <li>Nome Playlist</li>
-            <li>Nome Playlist</li>
-            <li>Nome Playlist</li>
-            <li>Nome Playlist</li>
-          </ul>
+        <!-- Bottom Nav -->
+        <div class="bottom-nav container">
+          <span>
+            <img
+              id="download-icon"
+              src="img/download.svg"
+              alt="download icon"
+            />
+            Installa app
+          </span>
+          <hr />
+          <div>
+            <span class="profile-text">
+              <img id="profile-icon" src="img/profile.svg" alt="profile icon" />
+              John Doe
+            </span>
+          </div>
         </div>
       </nav>
 
