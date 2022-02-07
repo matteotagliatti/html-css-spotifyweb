@@ -488,7 +488,7 @@ main nav img#profile-icon {
   }
 
   .footer-middle .progress-bar-container {
-    max-width: 375px;
+    max-width: 340px;
   }
 
   .footer-left div:nth-child(3) {
@@ -496,7 +496,7 @@ main nav img#profile-icon {
   }
 
   .footer-right .progress-bar-container {
-    width: 50px;
+    width: 60px;
   }
 }
 
