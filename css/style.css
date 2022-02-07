@@ -216,6 +216,10 @@ main nav div.bottom-nav span.profile-text {
   display: none;
 }
 
+.img-container:hover {
+  cursor: pointer;
+}
+
 .img-container:hover .img-overlay {
   position: absolute;
   display: flex;
