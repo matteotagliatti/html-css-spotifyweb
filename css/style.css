@@ -229,7 +229,7 @@ main nav div.bottom-nav span.profile-text {
 }
 
 .element {
-  width: calc(100% / 7);
+  width: calc((100% / 7) + 10px);
   display: flex;
   flex-direction: column;
   text-align: center;
