@@ -131,6 +131,11 @@ main nav .no-padding {
   padding: 0;
 }
 
+main nav .overflow {
+  max-height: 30vh;
+  overflow-y: auto;
+}
+
 main nav ul .active {
   border-left: 2px solid var(--green);
   font-weight: 700;
