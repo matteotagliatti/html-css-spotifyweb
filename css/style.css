@@ -394,6 +394,22 @@ main nav img#profile-icon {
   .element {
     width: calc((100% / 2) - 8px);
   }
+
+  footer i {
+    margin-right: 0.5rem;
+  }
+
+  .footer-middle .progress-bar-container {
+    max-width: 375px;
+  }
+
+  .footer-left div:nth-child(3) {
+    margin-left: 0;
+  }
+
+  .footer-right .progress-bar-container {
+    width: 50px;
+  }
 }
 
 /* Breakpoint XS */
