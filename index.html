@@ -22,25 +22,34 @@
         <div>
           <!-- Logo -->
           <div class="container">
-            <img class="logo" src="img/logo.svg" alt="logo" />
+            <img class="logo xs-none" src="img/logo.svg" alt="logo" />
+            <img
+              src="img/logo-small.svg"
+              alt="logo small"
+              class="logo-small only-xs"
+            />
           </div>
 
           <!-- Home + Search + Library -->
           <div class="container no-padding">
             <ul>
               <li class="active">
-                <img src="img/home.svg" alt="home icon" /> Home
+                <img src="img/home.svg" alt="home icon" />
+                <span class="xs-none">Home</span>
               </li>
-              <li><img src="img/search.svg" alt="search icon" /> Cerca</li>
               <li>
-                <img src="img/libreria.svg" alt="library icon" /> La tua
-                libreria
+                <img src="img/search.svg" alt="search icon" />
+                <span class="xs-none">Cerca</span>
+              </li>
+              <li>
+                <img src="img/libreria.svg" alt="library icon" />
+                <span class="xs-none">La tua libreria</span>
               </li>
             </ul>
           </div>
 
           <!-- Playlist -->
-          <div class="container">
+          <div class="container xs-none">
             <h3>Playlist</h3>
             <span><button id="create-playlist">+</button> Crea Playlist</span>
             <ul>
@@ -63,15 +72,14 @@
               src="img/download.svg"
               alt="download icon"
             />
-            Installa app
+            <span class="xs-none">Installa App</span>
           </span>
-          <hr />
-          <div>
-            <span class="profile-text">
-              <img id="profile-icon" src="img/profile.svg" alt="profile icon" />
-              John Doe
-            </span>
-          </div>
+          <hr class="xs-none" />
+
+          <span class="profile-text">
+            <img id="profile-icon" src="img/profile.svg" alt="profile icon" />
+            <span class="xs-none">John Doe</span>
+          </span>
         </div>
       </nav>
 

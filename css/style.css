@@ -108,6 +108,10 @@ footer i {
   padding: 0 2rem;
 }
 
+.only-xs {
+  display: none;
+}
+
 /* Classes - Main Nav */
 
 main nav .container {
@@ -117,6 +121,10 @@ main nav .container {
 
 main nav .logo {
   height: 50px;
+}
+
+main nav .logo-small {
+  height: 25px;
 }
 
 main nav .no-padding {
@@ -132,7 +140,7 @@ main nav div.bottom-nav img {
   margin: 0 0.4rem 0 0rem;
 }
 
-main nav div.bottom-nav span {
+main nav div.bottom-nav > span {
   display: flex;
   align-items: center;
 }
@@ -415,6 +423,52 @@ main nav img#profile-icon {
 /* Breakpoint XS */
 
 @media screen and (max-width: 576px) {
-  .element {
+  main nav .container {
+    padding: 0 1rem;
+    margin-bottom: 0;
+  }
+
+  main nav {
+    min-width: unset;
+    align-items: center;
+  }
+
+  main nav .logo-small {
+    margin-bottom: 1rem;
+  }
+
+  main nav .no-padding {
+    padding: 0 1rem;
+  }
+
+  main nav .bottom-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main nav ul li img {
+    margin: 0;
+  }
+
+  main nav img#profile-icon {
+    margin-right: unset;
+  }
+
+  main nav div.bottom-nav img {
+    margin-bottom: 1em;
+    margin-right: 0;
+  }
+
+  .xs-none {
+    display: none;
+  }
+
+  .only-xs {
+    display: block;
+  }
+
+  main nav ul .active {
+    border-left: none;
   }
 }
