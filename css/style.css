@@ -72,13 +72,33 @@ main nav ul li {
   align-items: center;
 }
 
+main nav ul li:hover {
+  color: white;
+  cursor: pointer;
+}
+
+main nav ul li:hover img {
+  opacity: 1;
+}
+
 main nav ul li img {
   height: 23px;
   margin: 0 0.4rem 0 1rem;
+  opacity: 0.8;
 }
 
 main nav hr {
   margin: 0.8rem 0 1rem 0;
+}
+
+main nav span:hover {
+  color: white;
+  cursor: pointer;
+}
+
+main nav span:hover #create-playlist {
+  background-color: white;
+  cursor: pointer;
 }
 
 /* General - Content */
@@ -241,6 +261,12 @@ main nav div.bottom-nav span.profile-text {
   width: 30px;
 }
 
+.content-nav ul li:hover {
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+
 /* Classes - Footer */
 
 footer .progress-bar {
@@ -255,6 +281,31 @@ footer .progress-bar .inner {
   width: 20%;
   border-radius: 3px;
   background-color: lightgray;
+  position: relative;
+}
+
+footer .progress-bar:hover {
+  cursor: pointer;
+}
+
+footer .progress-bar:hover .inner {
+  background-color: var(--green);
+}
+
+.inner-dot {
+  display: none;
+}
+
+footer .progress-bar:hover .inner-dot {
+  display: block;
+  position: absolute;
+  top: -2px;
+  right: 0;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 /* Classes - Footer Left */
@@ -268,6 +319,15 @@ footer .progress-bar .inner {
 
 .footer-left div:nth-child(3) {
   margin-left: 2rem;
+}
+
+.footer-left .icons {
+  color: var(--grey);
+}
+
+.footer-left .icons i:hover {
+  color: white;
+  cursor: pointer;
 }
 
 .footer-left .play {
@@ -285,7 +345,13 @@ footer .progress-bar .inner {
 
 .footer-left .title-author .author {
   font-size: 0.8rem;
-  color: var(grey);
+  color: var(--grey);
+}
+
+.footer-left .title-author .author:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: white;
 }
 
 .footer-left i {
@@ -377,6 +443,10 @@ main nav img#profile-icon {
   border-radius: 30px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+#upgrade-btn:hover {
+  transform: scale(1.1);
 }
 
 /* Breakpoint MB */
