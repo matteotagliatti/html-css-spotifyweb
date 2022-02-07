@@ -17,7 +17,7 @@
   <body>
     <main>
       <!-- Nav -->
-      <nav>
+      <nav class="flex flex-col justify-bet">
         <!-- Top Nav -->
         <div>
           <!-- Logo -->
@@ -33,15 +33,15 @@
           <!-- Home + Search + Library -->
           <div class="container no-padding">
             <ul>
-              <li class="active">
+              <li class="flex align-center active">
                 <img src="img/home.svg" alt="home icon" />
                 <span class="xs-none">Home</span>
               </li>
-              <li>
+              <li class="flex align-center">
                 <img src="img/search.svg" alt="search icon" />
                 <span class="xs-none">Cerca</span>
               </li>
-              <li>
+              <li class="flex align-center">
                 <img src="img/libreria.svg" alt="library icon" />
                 <span class="xs-none">La tua libreria</span>
               </li>
@@ -65,35 +65,35 @@
         </div>
 
         <!-- Bottom Nav -->
-        <div class="bottom-nav container">
-          <span>
+        <div class="bottom-nav container no-margin-bottom">
+          <p class="flex align-center">
             <img
               id="download-icon"
               src="img/download.svg"
               alt="download icon"
             />
             <span class="xs-none">Installa App</span>
-          </span>
+          </p>
           <hr class="xs-none" />
 
-          <span class="profile-text">
+          <p class="flex align-center">
             <img id="profile-icon" src="img/profile.svg" alt="profile icon" />
-            <span class="xs-none">John Doe</span>
-          </span>
+            <span class="xs-none profile-text">John Doe</span>
+          </p>
         </div>
       </nav>
 
       <!-- Content -->
       <div id="content">
         <!-- Upgrade -->
-        <div class="upgrade-container">
+        <div id="upgrade" class="flex align-center upgrade-container">
           <a href="#" id="upgrade-btn">Effettua l'upgrade</a>
         </div>
 
         <!-- Content Nav -->
         <div class="content-nav">
-          <ul>
-            <li class="active">In evidenza</li>
+          <ul class="flex justify-center">
+            <li class="flex flex-col align-center active">In evidenza</li>
             <li>Podcast</li>
             <li>Classifiche</li>
             <li>Generi e mood</li>
@@ -110,7 +110,7 @@
               <h1>Recently Played</h1>
             </div>
 
-            <div class="elements-container">
+            <div class="flex elements-container">
               <!-- Single Element -->
               <div class="element">
                 <div class="img-container">
@@ -192,7 +192,7 @@
               <h1>Creato per John Doe</h1>
               <span>Più ascoliti, più accurati saranno i suggerimenti</span>
             </div>
-            <div class="elements-container">
+            <div class="flex elements-container">
               <!-- Single Element -->
               <div class="element">
                 <div class="img-container">
@@ -222,7 +222,7 @@
               <h1>Artisti più popolari</h1>
               <span>Più ascoliti, più accurati saranno i suggerimenti</span>
             </div>
-            <div class="elements-container">
+            <div class="flex elements-container">
               <!-- Single Element -->
               <div class="element">
                 <div class="img-container">
@@ -250,13 +250,13 @@
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="flex justify-bet align-center">
       <!-- Left -->
-      <div class="footer-left">
+      <div class="flex justify-center align-center footer-left">
         <div>
           <img class="play" src="img/player_left.jpg" alt="playing" />
         </div>
-        <div class="title-author">
+        <div class="flex flex-col">
           <span class="title">Sinister</span>
           <span class="author">Subtitle</span>
         </div>
@@ -266,7 +266,7 @@
         </div>
       </div>
       <!-- Middle -->
-      <div class="footer-middle">
+      <div class="flex flex-col align-center footer-middle">
         <div>
           <i class="fas fa-random"></i>
           <i class="fas fa-step-backward"></i>
@@ -274,7 +274,7 @@
           <i class="fas fa-step-forward"></i>
           <i class="fas fa-redo-alt"></i>
         </div>
-        <div class="progress-bar-container">
+        <div class="progress-bar-container flex justify-center align-center">
           <span>0:25</span>
           <div class="progress-bar">
             <div class="inner">
@@ -286,10 +286,13 @@
       </div>
 
       <!-- Right -->
-      <div class="footer-right">
-        <i class="fas fa-list"></i>
-        <i class="fas fa-tv"></i>
-        <i class="fas fa-volume-up"></i>
+      <div class="footer-right flex align-center">
+        <div class="icons flex">
+          <i class="fas fa-list"></i>
+          <i class="fas fa-tv"></i>
+          <i class="fas fa-volume-up"></i>
+        </div>
+
         <div class="progress-bar-container">
           <div class="progress-bar">
             <div class="inner">
