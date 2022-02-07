@@ -56,7 +56,7 @@ main h3 {
 }
 
 main nav {
-  min-width: 250px;
+  min-width: 200px;
   padding-top: 1rem;
   color: var(--grey);
   background-color: black;
@@ -208,6 +208,7 @@ main nav div.bottom-nav span.profile-text {
 
 .content-nav ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1.5rem;
   text-transform: uppercase;
@@ -330,10 +331,10 @@ footer .progress-bar .inner {
   overflow: auto;
 }
 
-#create-playlist {
+main nav #create-playlist {
   width: 30px;
   height: 30px;
-  margin-right: 0.5rem;
+  margin: 0 0.5rem 0.7rem 0;
   font-size: 1.2rem;
   color: black;
   background-color: var(--grey);
@@ -363,4 +364,41 @@ main nav img#profile-icon {
   border-radius: 30px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+/* Breakpoint MB */
+
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .elements-container {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .element {
+    width: calc(90% / 4);
+  }
+
+  .footer-middle {
+    margin: 0 1rem;
+    min-width: 195px;
+  }
+}
+
+/* Breakpoint S */
+
+@media screen and (max-width: 767px) {
+  .element {
+    width: calc((100% / 2) - 8px);
+  }
+}
+
+/* Breakpoint XS */
+
+@media screen and (max-width: 576px) {
+  .element {
+  }
 }
