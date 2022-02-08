@@ -395,6 +395,7 @@ footer .progress-bar:hover .inner-dot {
 
 .footer-middle i.big {
   font-size: 1.7rem;
+  transition: 0.5s;
 }
 
 .footer-middle i.big:hover {
