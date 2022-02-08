@@ -263,7 +263,16 @@ main nav div.bottom-nav span.profile-text {
 }
 
 .element .img-overlay {
-  display: none;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
 }
 
 .img-container:hover {
@@ -271,14 +280,7 @@ main nav div.bottom-nav span.profile-text {
 }
 
 .img-container:hover .img-overlay {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  visibility: visible;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
