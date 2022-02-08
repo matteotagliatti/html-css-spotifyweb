@@ -73,6 +73,7 @@ main nav {
 main nav ul li {
   margin-bottom: 0.5rem;
   padding: 0.3rem 0;
+  transition: 0.5s;
 }
 
 main nav ul li:hover {
@@ -94,9 +95,17 @@ main nav hr {
   margin: 0.8rem 0 1rem 0;
 }
 
+main nav span {
+  transition: 0.5s;
+}
+
 main nav span:hover {
   color: white;
   cursor: pointer;
+}
+
+main nav #create-playlist {
+  transition: 0.5s;
 }
 
 main nav span:hover #create-playlist {
@@ -207,6 +216,10 @@ main nav div.bottom-nav span.profile-text {
   flex-wrap: wrap;
   gap: 1.5rem;
   text-transform: uppercase;
+}
+
+.content-nav ul li {
+  transition: 0.5s;
 }
 
 .content-nav ul li:hover {
@@ -457,6 +470,7 @@ main nav img#profile-icon {
   border-radius: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  transition: 0.5s;
 }
 
 #upgrade-btn:hover {
