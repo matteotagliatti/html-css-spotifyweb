@@ -36,6 +36,7 @@ i {
 
 h1 {
   margin-bottom: 0.5rem;
+  transition: 0.5s;
 }
 
 h3 {
@@ -249,6 +250,7 @@ main nav div.bottom-nav span.profile-text {
   display: flex;
   flex-direction: column;
   text-align: center;
+  transition: 0.5s;
 }
 
 .element img {
