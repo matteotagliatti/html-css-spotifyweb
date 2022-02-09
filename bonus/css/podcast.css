@@ -11,6 +11,16 @@
   cursor: pointer;
 }
 
-.element img {
+.element img,
+.element .img-container,
+.img-overlay {
   border-radius: 15px;
+}
+
+.element img {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.element .img-overlay {
+  bottom: 5px;
 }
